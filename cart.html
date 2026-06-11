@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopLite - Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">ShopLite</a>
+
+                <a href="cart.html" class="btn btn-outline-light position-relative ms-auto me-2 order-lg-last">
+                    Cart
+                    <span id="cart-badge"
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h2 class="mb-4">Your Shopping Cart</h2>
+
+        <div id="cart-status" class="text-center my-4"></div>
+
+        <div id="cart-content-area" class="row g-4 d-none">
+            <div class="col-12 col-lg-9">
+                <div class="table-responsive">
+                    <table class="table align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th style="width: 150px;">Quantity</th>
+                                <th>Total</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-table-body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <div class="card p-3 shadow-sm bg-white">
+                    <h4 class="h5 mb-3 fw-bold">Order Summary</h4>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Subtotal:</span>
+                        <span id="cart-subtotal">$0.00</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span>Shipping Fee:</span>
+                        <span class="text-success">Free</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between mb-4">
+                        <span class="fw-bold">Total:</span>
+                        <span id="cart-total-price" class="fw-bold text-danger h5">$0.00</span>
+                    </div>
+                    <button onclick="alert('The checkout feature is currently under maintenance!')"
+                        class="btn btn-success w-100 py-2 fw-bold">
+                        Proceed to Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 ShopLite Mini E-Commerce.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopLite - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">ShopLite</a>
+
+                <a href="cart.html" class="btn btn-outline-light position-relative ms-auto me-2 order-lg-last">
+                    Cart
+                    <span id="cart-badge"
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section mb-5">
+            <div class="container">
+                <h1 class="display-4 fw-bold">Wellcome to ShopLite</h1>
+                <p class="lead">A fast, convenient, and affordable online shopping platform.</p>
+            </div>
+        </section>
+
+        <section class="container mb-5">
+            <h2 class="text-center mb-4">Products</h2>
+
+            <div id="product-status" class="text-center my-4"></div>
+
+            <div id="product-grid" class="row g-4">
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 ShopLite Mini E-Commerce.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/api.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
