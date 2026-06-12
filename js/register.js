@@ -54,9 +54,10 @@ registerForm.addEventListener("submit", (e) => {
         return;
     }
 
-    successBanner.textContent =
-        "🎉 Congratulations! Your registration form is valid and has been submitted successfully.";
-    successBanner.classList.remove("d-none");
+    const successModalElement = document.querySelector("#successModal");
+    const bootstrapModalInstance = new bootstrap.Modal(successModalElement);
+    
+    bootstrapModalInstance.show();
 
     registerForm.reset();
 });

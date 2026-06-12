@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -18,8 +18,7 @@
 
                 <a href="cart.html" class="btn btn-outline-light position-relative ms-auto me-2 order-lg-last">
                     Cart
-                    <span id="cart-badge"
-                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                    <span id="cart-badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -29,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link active" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="register.html">Register</a>
@@ -41,26 +40,44 @@
     </header>
 
     <main>
-        <section class="hero-section mb-5">
+        <section class="hero-section mb-3">
             <div class="container">
-                <h1 class="display-4 fw-bold">Wellcome to ShopLite</h1>
-                <p class="lead">A fast, convenient, and affordable online shopping platform.</p>
+                <h1 class="display-4 fw-bold">Welcome to ShopLite</h1>
+                <p class="lead">Discover a fast, convenient, and affordable online shopping experience.</p>
             </div>
         </section>
 
         <section class="container mb-5">
-            <h2 class="text-center mb-4">Products</h2>
+            <h2 class="text-center mb-4 fw-bold">Explore Our Products</h2>
+            
+            <div class="row g-3 mb-4 p-3 bg-white rounded shadow-sm align-items-center">
+                <div class="col-12 col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text bg-light">🔍</span>
+                        <input type="text" id="search-input" class="form-control" placeholder="Search products by name..." />
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="d-flex align-items-center gap-2">
+                        <label for="category-select" class="text-nowrap fw-semibold mb-0">Category:</label>
+                        <select id="category-select" class="form-select">
+                            <option value="all">All Products</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
 
             <div id="product-status" class="text-center my-4"></div>
 
             <div id="product-grid" class="row g-4">
-            </div>
+                </div>
         </section>
     </main>
 
     <footer class="bg-dark text-light py-4 mt-auto">
         <div class="container text-center">
-            <p class="mb-0">&copy; 2026 ShopLite Mini E-Commerce.</p>
+            <p class="mb-0">&copy; 2026 ShopLite Mini E-Commerce. Final Year IT Project.</p>
         </div>
     </footer>
 
